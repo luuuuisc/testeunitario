@@ -15,9 +15,9 @@ public class TrianguloTest {
 	
 	@Test
 	public void tipoTrianguloShouldReturnIsocelesWhenOnlyTwoSidesAreEqual() {
-		assertIsosceles(3, 3, 4);
-		assertIsosceles(3, 4, 3);
-		assertIsosceles(4, 3, 3);
+		exchangeIsosceles(3, 3, 4);
+		exchangeIsosceles(3, 4, 3);
+		exchangeIsosceles(4, 3, 3);
 	}
 	
 	
@@ -37,7 +37,7 @@ public class TrianguloTest {
 	
 	}
 	 
-	private void assertIsosceles(int a, int b, int c) {
+	private void exchangeIsosceles(int a, int b, int c) {
 		assertEquals("Isósceles", Triangulo.tipoTriangulo(a, b, c));
 	}
 	 
