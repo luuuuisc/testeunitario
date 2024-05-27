@@ -42,17 +42,17 @@ public class TrianguloTest {
 	}
 	 
 	
-	private void assertTriangleSidesMustBeGreaterThanZero(int a, int b, int c) {
+	private void exchangeTriangleSidesMustBeGreaterThanZero(int a, int b, int c) {
 		assertEquals("Todos os lados devem ser maiores que zero.", Triangulo.tipoTriangulo(a, b, c));
 	}
 	 
 	 
-	public void tipoTrianguloShouldReportErrorWhenAnySideIsZeroOrNegative() {
+	public void exchangetipoTrianguloShouldReportErrorWhenAnySideIsZeroOrNegative() {
 		int sideB = 1, sideC = 1;
 
-	    assertTriangleSidesMustBeGreaterThanZero(0, sideB, sideC);
-	    assertTriangleSidesMustBeGreaterThanZero(sideB, 0, sideC);
-	    assertTriangleSidesMustBeGreaterThanZero(sideB, sideC, 0);
+		exchangeTriangleSidesMustBeGreaterThanZero(0, sideB, sideC);
+		exchangeTriangleSidesMustBeGreaterThanZero(sideB, 0, sideC);
+		exchangeTriangleSidesMustBeGreaterThanZero(sideB, sideC, 0);
 	}
 }
 
